@@ -1,0 +1,25 @@
+<header class="header-wrapper">
+  <div class="navbar navbar-dark shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+      <strong style="font-size: 30px; cursor: pointer;" (click)="navigateToHome()">Steps
+        <p>online shop</p></strong>
+      <div class="form-group">
+        <input [(ngModel)]="searchItem"
+               (keyup.enter)="search($event)"
+               type="text"
+               class="form-control"
+               placeholder="Search products">
+        <button type="button"
+                class="btn btn-light"
+                (click)="onSearchClicked()">
+          Search
+        </button>
+      </div>
+    </div>
+    <button type="button"
+            class="btn btn-light"
+            (click)="navigateToAuthPage()">
+      Log Out
+    </button>
+  </div>
+</header>

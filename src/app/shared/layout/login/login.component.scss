@@ -1,0 +1,24 @@
+.login-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .form-wrapper {
+    padding: 45px;
+    border: 2px solid #81008352;
+
+    .actions {
+      display: flex;
+      justify-content: center;
+
+      .btn-primary {
+        background: #810083;
+        border: 1px solid #810083;
+        margin: 5px;
+      }
+    }
+  }
+}
